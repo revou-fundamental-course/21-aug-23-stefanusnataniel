@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your School Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/school.png" alt="School Icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="our-profile.html">Our Profile</a></li>
+                <li><a href="#">Achievement</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="part1">
+        <h1>Hi <span id="username">Username</span>, Welcome to my website.</h1>
+        <h3>Ini adalah website latihan pertama</h3>
+        <img src="images/housen.png" alt="Picture 1">
+    </section>
+    <section class="part2">
+        <h1>Our Facilitation</h1>
+        <div class="facilitation-placeholder"></div>
+        <div class="facilitation-item">
+            <img src="images/teacher.png" alt="Professional Teacher">
+            <p>Professional Teacher</p>
+        </div>
+        <div class="facilitation-item">
+            <img src="images/sportfield.png" alt="Sport Field">
+            <p>Sport Field</p>
+        </div>
+        <div class="facilitation-item">
+            <img src="images/classroom.png" alt="Classroom">
+            <p>Classroom</p>
+        </div>
+    </section>
+    <section class="part3">
+        <div class="left-side">
+            <h1>Message Us</h1>
+            <form id="message-form">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" placeholder="Nama">
+                
+                <label for="tanggal">Tanggal lahir</label>
+                <input type="text" name="tanggal" id="tanggal" placeholder="(DD/MM/YYYY)">
+                
+                <label for="jenis-kelamin">Jenis Kelamin</label>
+                <select name="jenis-kelamin" id="jenis-kelamin">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+                
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="right-side">
+            <!-- ... -->
+        </div>
+    </section>
+    <section class="footer">
+        <p>Created by Revou</p>
+    </section>
+       
+    <script>
+    
+        const usernameSpan = document.getElementById("username");
+    
+        
+        const username = prompt("Please enter your name:");
+        if (username) {
+            usernameSpan.textContent = username;
+        }
+    </script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
