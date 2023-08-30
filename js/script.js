@@ -10,9 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const jenisKelamin = messageForm.elements["jenis-kelamin"].value;
         const pesan = messageForm.elements.pesan.value;
 
-        // Validation (you can add more specific validations here)
+        
         if (nama && tanggal && jenisKelamin && pesan) {
-            // Display the values in the right-side section
             rightSide.innerHTML = `
                 <p>Current time (${new Date().toLocaleDateString("en-US")})</p>
                 <p>Nama: ${nama}</p>
@@ -25,4 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please fill out all fields.");
         }
     });
-});
+})
